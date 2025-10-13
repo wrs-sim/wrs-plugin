@@ -1,0 +1,9 @@
+[submodule "sample/WRS2025"]
+	path = sample/WRS2025
+	url = https://github.com/wrs-sim/WRS2025
+[submodule "sample/WRS2024PRE"]
+	path = sample/WRS2024PRE
+	url = https://github.com/wrs-sim/WRS2024PRE
+[submodule "sample/WRS2020"]
+	path = sample/WRS2020
+	url = https://github.com/wrs-sim/WRS2020

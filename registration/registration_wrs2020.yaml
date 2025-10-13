@@ -1,0 +1,31 @@
+format_version: 0.0
+robot_list: &RobotList [ AizuSpiderDA, DoubleArmV7A ]
+
+registrations:
+  - &TS
+    name: ts1
+    task_project: [ wrs2020/TS1, wrs2020/Common ]
+    robot_project: *RobotList
+    robot_alignment: X+
+    start_position: [ 1.0, -0.5, 0.0 ]
+    simulator_project: [ wrs2020/AGXSimulator, wrs2020/AISTSimulator ]
+    view_project: RefereeView
+    enable_recording: false
+    # enable_tracking: true
+    # enable_ros: false
+    enable_ros: true
+  - <<: *TS
+    name: ts2
+    task_project: [ wrs2020/TS2, wrs2020/Common ]
+    robot_alignment: X+
+    start_position: [ 1.0, 1.0, 0.0 ]
+  - <<: *TS
+    name: ts3
+    task_project: [ wrs2020/TS3, wrs2020/Common ]
+    robot_alignment: X+
+    start_position: [ 1.0, 1.0, 0.0 ]
+  - <<: *TS
+    name: ts4
+    task_project: [ wrs2020/TS4, wrs2020/Common ]
+    robot_alignment: X+
+    start_position: [ 1.0, 1.0, 0.0 ]

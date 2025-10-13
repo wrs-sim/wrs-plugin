@@ -1,0 +1,27 @@
+# Japanese translations for LivePlaybackPlugin package.
+# Copyright (C) 2025 THE LivePlaybackPlugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the LivePlaybackPlugin package.
+# k38-suzuki <suzuki.kenta38@jaea.go.jp>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LivePlaybackPlugin\n"
+"Report-Msgid-Bugs-To: suzuki.kenta38@jaea.go.jp\n"
+"POT-Creation-Date: 2025-07-23 14:00-0800\n"
+"PO-Revision-Date: 2025-07-23 14:00-0800\n"
+"Last-Translator: k38-suzuki <suzuki.kenta38@jaea.go.jp>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "LivePlaybackBar"
+msgstr "ライブ再生バー"
+
+msgid "Start Live Playback"
+msgstr "ライブ再生の開始"
+
+msgid "Save project as log playback archive"
+msgstr "ログ再生用アーカイブとしてプロジェクトを保存"

@@ -1,0 +1,57 @@
+format_version: 0.0
+robot_list: &RobotList [ AizuSpiderDA, HobbyDrone ]
+
+registrations:
+  - &Mission3
+    name: testrun
+    task_project: [ wrs2025/M3/M3 ]
+    robot_project: *RobotList
+    robot_alignment: X+
+    start_position: [ -3.5, 0.0, 0.0 ]
+    simulator_project: [ wrs2025/AGXSimulator, wrs2025/AISTSimulator ]
+    view_project: RefereeView
+    enable_recording: false
+    # enable_tracking: true
+    #enable_ros: false
+    enable_ros: true
+  - &PS
+    name: ps1234
+    task_project: [ wrs2025/project_20251011/A1-Hard, wrs2025/project_20251011/A2-Hard, wrs2025/project_20251011/A3-Hard, wrs2025/project_20251011/A4-Hard, wrs2025/PS/Common ]
+    robot_project: *RobotList
+    robot_alignment: X+
+    start_position: [ -8.5, -5.0, 0.0 ]
+    simulator_project: [ wrs2025/project_20251011/AGXSimulator, wrs2025/project_20251011/AISTSimulator ]
+    view_project: RefereeView
+    enable_recording: true
+    # enable_tracking: true
+    enable_ros: true
+  - <<: *PS
+    name: ps1
+    task_project: [ wrs2025/project_20251011/A1-Hard, wrs2025/PS/Common ]
+    robot_alignment: X+
+    start_position: [ -8.5, -5.0, 0.0 ]
+  - <<: *PS
+    name: ps2
+    task_project: [ wrs2025/project_20251011/A2-Hard, wrs2025/PS/Common ]
+    robot_alignment: X-
+    start_position: [ 8.5, -5.0, 0.0 ]
+  - <<: *PS
+    name: ps3
+    task_project: [ wrs2025/project_20251011/A3-Hard, wrs2025/PS/Common ]
+    robot_alignment: X-
+    start_position: [ 8.5, 5.0, 0.0 ]
+  - <<: *PS
+    name: ps4
+    task_project: [ wrs2025/project_20251011/A4-Hard, wrs2025/PS/Common ]
+    robot_alignment: X+
+    start_position: [ -8.5, 5.0, 0.0 ]
+  - <<: *PS
+    name: ps12
+    task_project: [ wrs2025/project_20251012/A1-Hard, wrs2025/project_20251012/A2-Hard, wrs2025/PS/Common ]
+    robot_alignment: X+
+    start_position: [ -8.5, -5.0, 0.0 ]
+  - <<: *PS
+    name: ps34
+    task_project: [ wrs2025/project_20251012/A3-Hard, wrs2025/project_20251012/A4-Hard, wrs2025/PS/Common ]
+    robot_alignment: X-
+    start_position: [ 8.5, 5.0, 0.0 ]
