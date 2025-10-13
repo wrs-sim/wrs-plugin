@@ -1,2 +1,0 @@
-add_subdirectory(LivePlaybackPlugin)
-add_subdirectory(WRSPlugin)

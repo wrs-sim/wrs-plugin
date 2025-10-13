@@ -1,57 +1,56 @@
-format_version: 0.0
-robot_list: &RobotList [ AizuSpiderDA, HobbyDrone ]
+format_version: 25.0
+robot_list: &RobotList [ AizuSpiderDA-ROS2, HobbyDrone-ROS2 ]
 
 registrations:
-  - &Mission3
-    name: testrun
-    task_project: [ wrs2025/M3/M3 ]
-    robot_project: *RobotList
-    robot_alignment: X+
-    start_position: [ -3.5, 0.0, 0.0 ]
-    simulator_project: [ wrs2025/AGXSimulator, wrs2025/AISTSimulator ]
-    view_project: RefereeView
-    enable_recording: false
-    # enable_tracking: true
-    #enable_ros: false
-    enable_ros: true
-  - &PS
-    name: ps1234
-    task_project: [ wrs2025/project_20251011/A1-Hard, wrs2025/project_20251011/A2-Hard, wrs2025/project_20251011/A3-Hard, wrs2025/project_20251011/A4-Hard, wrs2025/PS/Common ]
+  - &PS1
+    name: ps-prelim
+    task_project: [ project_20251009/A1, project_20251009/A2, project_20251009/A3, project_20251009/A4, PS/Common ]
     robot_project: *RobotList
     robot_alignment: X+
     start_position: [ -8.5, -5.0, 0.0 ]
-    simulator_project: [ wrs2025/project_20251011/AGXSimulator, wrs2025/project_20251011/AISTSimulator ]
-    view_project: RefereeView
+    simulator_project: [ project_20251009/AGXSimulator, project_20251009/AISTSimulator ]
+    view_project: PS/RefereeView
     enable_recording: true
     # enable_tracking: true
     enable_ros: true
-  - <<: *PS
+  - <<: *PS1
     name: ps1
-    task_project: [ wrs2025/project_20251011/A1-Hard, wrs2025/PS/Common ]
+    task_project: [ project_20251009/A1, PS/Common ]
     robot_alignment: X+
     start_position: [ -8.5, -5.0, 0.0 ]
-  - <<: *PS
+  - <<: *PS1
     name: ps2
-    task_project: [ wrs2025/project_20251011/A2-Hard, wrs2025/PS/Common ]
+    task_project: [ project_20251009/A2, PS/Common ]
     robot_alignment: X-
     start_position: [ 8.5, -5.0, 0.0 ]
-  - <<: *PS
+  - <<: *PS1
     name: ps3
-    task_project: [ wrs2025/project_20251011/A3-Hard, wrs2025/PS/Common ]
+    task_project: [ project_20251009/A3, PS/Common ]
     robot_alignment: X-
     start_position: [ 8.5, 5.0, 0.0 ]
-  - <<: *PS
+  - <<: *PS1
     name: ps4
-    task_project: [ wrs2025/project_20251011/A4-Hard, wrs2025/PS/Common ]
+    task_project: [ project_20251009/A4, PS/Common ]
     robot_alignment: X+
     start_position: [ -8.5, 5.0, 0.0 ]
-  - <<: *PS
-    name: ps12
-    task_project: [ wrs2025/project_20251012/A1-Hard, wrs2025/project_20251012/A2-Hard, wrs2025/PS/Common ]
+  - &PS2
+    name: ps-final
+    task_project: [ project_20251012/A1-Hard, project_20251012/A2-Hard, project_20251012/A3-Hard, project_20251012/A4-Hard, PS/Common ]
+    robot_project: *RobotList
     robot_alignment: X+
     start_position: [ -8.5, -5.0, 0.0 ]
-  - <<: *PS
+    simulator_project: [ project_20251012/AGXSimulator, project_20251012/AISTSimulator ]
+    view_project: PS/RefereeView
+    enable_recording: true
+    # enable_tracking: true
+    enable_ros: true
+  - <<: *PS2
+    name: ps12
+    task_project: [ project_20251012/A1-Hard, project_20251012/A2-Hard, PS/Common ]
+    robot_alignment: X+
+    start_position: [ -8.5, -5.0, 0.0 ]
+  - <<: *PS2
     name: ps34
-    task_project: [ wrs2025/project_20251012/A3-Hard, wrs2025/project_20251012/A4-Hard, wrs2025/PS/Common ]
+    task_project: [ project_20251012/A3-Hard, project_20251012/A4-Hard, PS/Common ]
     robot_alignment: X-
     start_position: [ 8.5, 5.0, 0.0 ]
