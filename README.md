@@ -40,7 +40,7 @@ $ mkdir -p ~/ws/src
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/choreonoid/choreonoid.git
 $ git clone https://github.com/choreonoid/choreonoid_ros.git
-$ git clone https://github.com/k38-suzuki/wrs-plugin.git choreonoid/ext/wrs-plugin
+$ git clone --recursive https://github.com/wrs-sim/wrs-plugin choreonoid/ext/wrs-plugin
 $ git clone https://github.com/k38-suzuki/choreonoid_joy2.git
 ```
 
