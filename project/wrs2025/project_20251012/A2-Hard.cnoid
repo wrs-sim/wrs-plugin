@@ -83,7 +83,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
-                controller: "FireController"
+                controller: "FireController2020"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
@@ -121,7 +121,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
-                controller: "HoseNozzleController"
+                controller: "HoseNozzleController2020"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
@@ -188,7 +188,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
-                controller: "FireController"
+                controller: "FireController2020"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
@@ -226,7 +226,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
-                controller: "HoseNozzleController"
+                controller: "HoseNozzleController2020"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
