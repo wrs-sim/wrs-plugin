@@ -60,7 +60,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: "position ARM1_"
-                controller: "Jaco2Controller1"
+                controller: "Jaco2Controller"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
@@ -72,7 +72,7 @@ items:
               data:
                 isNoDelayMode: false
                 controllerOptions: "position ARM2_"
-                controller: "Jaco2Controller2"
+                controller: "Jaco2Controller"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false
